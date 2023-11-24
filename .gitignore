@@ -153,10 +153,13 @@ dmypy.json
 cython_debug/
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 library/password.json
 
 =======
 >>>>>>> 68d76ea (Initial commit)
+=======
+>>>>>>> 23f998a (Initial commit)
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
