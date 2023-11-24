@@ -10,7 +10,7 @@ class Book(models.Model):
 
     def __str__(self):
         return self.name
-# идей нет для изменений
+
 
 class CustomUserManager(BaseUserManager):
     def create_user(self, email, username, password=None, **extra_fields):
