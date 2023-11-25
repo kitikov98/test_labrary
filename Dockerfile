@@ -1,8 +1,20 @@
-FROM python: 3.10.9
+FROM python:3.10
 
 
-SHELL ["/bin/bash", "-c"]
-
-#  set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
+
+
+RUN mkdir /app
+WORKDIR /app
+
+
+COPY requirements.txt /app/
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
+
+COPY . /app/
+
+
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "library.wsgi:application"]
