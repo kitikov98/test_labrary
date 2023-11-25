@@ -1,1 +1,2 @@
-# test_labrary
+Для запуска контейнера используйте команду
+"docker compose up"
